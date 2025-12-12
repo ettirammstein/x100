@@ -1,9 +1,8 @@
-use near_sdk::borsh::{self, BorshDeserialize, BorshSerialize};
+use near_sdk::borsh::{BorshDeserialize, BorshSerialize};
 use near_sdk::near_bindgen;
 use near_sdk::near;
 
 #[near(contract_state)]
-#[derive(BorshDeserialize, BorshSerialize)]
 pub struct Contract {
     value: u64,
 }
